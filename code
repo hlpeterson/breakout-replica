@@ -1,0 +1,1699 @@
+//Create Ball
+let ball = create({    
+    home: true,
+    homeX: 0,
+    homeY: 0,
+    orientationMode: "billboard",
+    scaleX: .4,
+    scaleY: .2,
+    scaleZ: .1,
+    space: "tempLocal", 
+    color: "blue"
+})
+//Create Game Over Message
+let gameOver = create({
+    home: true,
+    homeX: -100,
+    homeY: -100,
+    orientationMode: "billboard",
+    scaleX: .1,
+    scaleY: .1,
+    scaleZ: .1,
+    space: "tempLocal", 
+    color: "black"
+});
+//Create Bricks
+let brick1 = create({
+    home: true,
+    homeX: -18.8,
+    homeY: 8.25,
+    orientationMode: "billboard",
+    scaleX: 2,
+    scaleY: .5,
+    scaleZ: .1,
+    space: "tempLocal", 
+    name: "brick1",
+    color: "red"
+})
+
+let brick2 = create({
+    home: true,
+    homeX: -17.34,
+    homeY: 9.7,
+    orientationMode: "billboard",
+    scaleX: 2,
+    scaleY: .5,
+    scaleZ: .1,
+    space: "tempLocal", 
+    name: "brick2",
+    color: "red"
+})
+
+let brick3 = create({
+    home: true,
+    homeX: -15.87,
+    homeY: 11.2,
+    orientationMode: "billboard",
+    scaleX: 2,
+    scaleY: .5,
+    scaleZ: .1,
+    space: "tempLocal", 
+    name: "brick3",
+    color: "red"
+})
+
+let brick4 = create({
+    home: true,
+    homeX: -9.985,
+    homeY: 17.08,
+    orientationMode: "billboard",
+    scaleX: 2,
+    scaleY: .5,
+    scaleZ: .1,
+    space: "tempLocal",
+    name: "brick4",
+    color: "red",
+})
+
+let brick5 = create({
+    home: true,
+    homeX: -14.4,
+    homeY: 12.665,
+    orientationMode: "billboard",
+    scaleX: 2,
+    scaleY: .5,
+    scaleZ: .1,
+    space: "tempLocal",
+    name: "brick5", 
+    color: "red"
+})
+
+let brick6 = create({
+    home: true,
+    homeX: -12.9,
+    homeY: 14.136,
+    orientationMode: "billboard",
+    scaleX: 2,
+    scaleY: .5,
+    scaleZ: .1,
+    space: "tempLocal",
+    name: "brick6", 
+    color: "red"
+})
+
+let brick7 = create({
+    home: true,
+    homeX: -11.456,
+    homeY: 15.6,
+    orientationMode: "billboard",
+    scaleX: 2,
+    scaleY: .5,
+    scaleZ: .1,
+    space: "tempLocal", 
+    name: "brick7",
+    color: "red"
+})
+
+let brick8 = create({
+    home: true,
+    homeX: -8.5,
+    homeY: 18.55,
+    orientationMode: "billboard",
+    scaleX: 2,
+    scaleY: .5,
+    scaleZ: .1,
+    space: "tempLocal",
+    name: "brick8", 
+    color: "red"
+})
+
+let brick9 = create({
+    home: true,
+    homeX: -12.2474,
+    homeY: 13.457,
+    orientationMode: "billboard",
+    scaleX: 2,
+    scaleY: .5,
+    scaleZ: .1,
+    space: "tempLocal", 
+    name: "brick9",
+    color: "orange"
+})
+
+let brick10 = create({
+    home: true,
+    homeX: -15.2,
+    homeY: 10.5,
+    orientationMode: "billboard",
+    scaleX: 2,
+    scaleY: .5,
+    scaleZ: .1,
+    space: "tempLocal",
+    name: "brick10", 
+    color: "orange"
+})
+
+let brick11 = create({
+    home: true,
+    homeX: -13.7,
+    homeY: 11.986,
+    orientationMode: "billboard",
+    scaleX: 2,
+    scaleY: .5,
+    scaleZ: .1,
+    space: "tempLocal",
+    name: "brick11", 
+    color: "orange"
+})
+
+let brick112 = create({
+    home: true,
+    homeX: -9.3,
+    homeY: 16.4,
+    orientationMode: "billboard",
+    scaleX: 2,
+    scaleY: .5,
+    scaleZ: .1,
+    space: "tempLocal",
+    name: "brick12", 
+    color: "orange"
+})
+
+let brick13 = create({
+    home: true,
+    homeX: -10.776433,
+    homeY: 14.9,
+    orientationMode: "billboard",
+    scaleX: 2,
+    scaleY: .5,
+    scaleZ: .1,
+    space: "tempLocal",
+    name: "brick13", 
+    color: "orange"
+})
+
+let brick14 = create({
+    home: true,
+    homeX: -18.1,
+    homeY: 7.573,
+    orientationMode: "billboard",
+    scaleX: 2,
+    scaleY: .5,
+    scaleZ: .1,
+    space: "tempLocal",
+    name: "brick14", 
+    color: "orange"
+})
+
+let brick15 = create({
+    home: true,
+    homeX: -7.8345,
+    homeY: 17.87,
+    orientationMode: "billboard",
+    scaleX: 2,
+    scaleY: .5,
+    scaleZ: .1,
+    space: "tempLocal",
+    name: "brick15", 
+    color: "orange"
+})
+
+let brick16 = create({
+    home: true,
+    homeX: -16.63,
+    homeY: 9,
+    orientationMode: "billboard",
+    scaleX: 2,
+    scaleY: .5,
+    scaleZ: .1,
+    space: "tempLocal",
+    name: "brick16", 
+    color: "orange"
+})
+
+let brick17 = create({
+    home: true,
+    homeX: -8.6,
+    homeY: 15.7,
+    orientationMode: "billboard",
+    scaleX: 2,
+    scaleY: .5,
+    scaleZ: .1,
+    space: "tempLocal",
+    name: "brick17", 
+    color: "yellow"
+})
+
+let brick18 = create({
+    home: true,
+    homeX: -7.2,
+    homeY: 17.2,
+    orientationMode: "billboard",
+    scaleX: 2,
+    scaleY: .5,
+    scaleZ: .1,
+    space: "tempLocal",
+    name: "brick18", 
+    color: "yellow"
+})
+
+let brick19 = create({
+    home: true,
+    homeX: -13.04,
+    homeY: 11.3,
+    orientationMode: "billboard",
+    scaleX: 2,
+    scaleY: .5,
+    scaleZ: .1,
+    space: "tempLocal",
+    name: "brick19", 
+    color: "yellow"
+})
+
+let brick20 = create({
+    home: true,
+    homeX: -15.98,
+    homeY: 8.36456,
+    orientationMode: "billboard",
+    scaleX: 2,
+    scaleY: .5,
+    scaleZ: .1,
+    space: "tempLocal",
+    name: "brick20", 
+    color: "yellow"
+})
+
+let brick21 = create({
+    home: true,
+    homeX: -14.51,
+    homeY: 9.8355,
+    orientationMode: "billboard",
+    scaleX: 2,
+    scaleY: .5,
+    scaleZ: .1,
+    space: "tempLocal",
+    name: "brick21", 
+    color: "yellow"
+})
+
+let brick22 = create({
+    home: true,
+    homeX: -17.45,
+    homeY: 6.9,
+    orientationMode: "billboard",
+    scaleX: 2,
+    scaleY: .5,
+    scaleZ: .1,
+    space: "tempLocal",
+    name: "brick22", 
+    color: "yellow"
+})
+
+let brick23 = create({
+    home: true,
+    homeX: -10.1,
+    homeY: 14.23,
+    orientationMode: "billboard",
+    scaleX: 2,
+    scaleY: .5,
+    scaleZ: .1,
+    space: "tempLocal",
+    name: "brick23", 
+    color: "yellow"
+})
+
+let brick24 = create({
+    home: true,
+    homeX: -11.568,
+    homeY: 12.77744,
+    orientationMode: "billboard",
+    scaleX: 2,
+    scaleY: .5,
+    scaleZ: .1,
+    space: "tempLocal",
+    name: "brick24", 
+    color: "yellow"
+})
+
+let brick25 = create({
+    home: true,
+    homeX: -16.7,
+    homeY: 6.2,
+    orientationMode: "billboard",
+    scaleX: 2,
+    scaleY: .5,
+    scaleZ: .1,
+    space: "tempLocal",
+    name: "brick25", 
+    color: "purple"
+})
+
+let brick26 = create({
+    home: true,
+    homeX: -6.4,
+    homeY: 16.454,
+    orientationMode: "billboard",
+    scaleX: 2,
+    scaleY: .5,
+    scaleZ: .1,
+    space: "tempLocal",
+    name: "brick26", 
+    color: "purple"
+})
+
+let brick27 = create({
+    home: true,
+    homeX: -7.9,
+    homeY: 14.983337,
+    orientationMode: "billboard",
+    scaleX: 2,
+    scaleY: .5,
+    scaleZ: .1,
+    space: "tempLocal",
+    name: "brick27", 
+    color: "purple"
+})
+
+let brick28 = create({
+    home: true,
+    homeX: -12.3,
+    homeY: 10.57,
+    orientationMode: "billboard",
+    scaleX: 2,
+    scaleY: .5,
+    scaleZ: .1,
+    space: "tempLocal",
+    name: "brick28", 
+    color: "purple"
+})
+
+let brick29 = create({
+    home: true,
+    homeX: -10.83,
+    homeY: 12.04,
+    orientationMode: "billboard",
+    scaleX: 2,
+    scaleY: .5,
+    scaleZ: .1,
+    space: "tempLocal",
+    name: "brick29", 
+    color: "purple"
+})
+
+let brick30 = create({
+    home: true,
+    homeX: -9.36,
+    homeY: 13.5,
+    orientationMode: "billboard",
+    scaleX: 2,
+    scaleY: .5,
+    scaleZ: .1,
+    space: "tempLocal",
+    name: "brick30", 
+    color: "purple"
+})
+
+let brick31 = create({
+    home: true,
+    homeX: -15.245,
+    homeY: 7.63,
+    orientationMode: "billboard",
+    scaleX: 2,
+    scaleY: .5,
+    scaleZ: .1,
+    space: "tempLocal",
+    name: "brick31", 
+    color: "purple"
+})
+
+let brick32 = create({
+    home: true,
+    homeX: -13.774,
+    homeY: 9.1,
+    orientationMode: "billboard",
+    scaleX: 2,
+    scaleY: .5,
+    scaleZ: .1,
+    space: "tempLocal",
+    name: "brick32", 
+    color: "purple"
+})
+
+//Sets state of bricks
+let brick1Destroyed = false;
+let brick2Destroyed = false;
+let brick3Destroyed = false;
+let brick4Destroyed = false;
+let brick5Destroyed = false;
+let brick6Destroyed = false;
+let brick7Destroyed = false;
+let brick8Destroyed = false;
+let brick9Destroyed = false;
+let brick10Destroyed = false;
+let brick11Destroyed = false;
+let brick12Destroyed = false;
+let brick13Destroyed = false;
+let brick14Destroyed = false;
+let brick15Destroyed = false;
+let brick16Destroyed = false;
+let brick17Destroyed = false;
+let brick18Destroyed = false;
+let brick19Destroyed = false;
+let brick20Destroyed = false;
+let brick21Destroyed = false;
+let brick22Destroyed = false;
+let brick23Destroyed = false;
+let brick24Destroyed = false;
+let brick25Destroyed = false;
+let brick26Destroyed = false;
+let brick27Destroyed = false;
+let brick28Destroyed = false;
+let brick29Destroyed = false;
+let brick30Destroyed = false;
+let brick31Destroyed = false;
+let brick32Destroyed = false;
+let bricksDestroyed = 0;
+let counter = 0;
+
+//Checks if bricks are destroyed
+function isDestroyed() {
+    if(Math.abs(getBot("#name", "brick1").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick1").tags.homeY - ball.tags.homeY) < .9) {
+            if(brick1Destroyed == true) {
+                return true;
+            } else {
+                return false;
+            }
+   }
+    if(Math.abs(getBot("#name", "brick2").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick2").tags.homeY - ball.tags.homeY) < .9) {
+            if(brick2Destroyed == true) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    if(Math.abs(getBot("#name", "brick3").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick3").tags.homeY - ball.tags.homeY) < .9) {
+            if(brick3Destroyed == true) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    if(Math.abs(getBot("#name", "brick4").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick4").tags.homeY - ball.tags.homeY) < .9) {
+            if(brick4Destroyed == true) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    if(Math.abs(getBot("#name", "brick5").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick5").tags.homeY - ball.tags.homeY) < .9) {
+            if(brick5Destroyed == true) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    if(Math.abs(getBot("#name", "brick6").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick6").tags.homeY - ball.tags.homeY) < .9) {
+            if(brick6Destroyed == true) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    if(Math.abs(getBot("#name", "brick7").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick7").tags.homeY - ball.tags.homeY) < .9) {
+            if(brick7Destroyed == true) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    if(Math.abs(getBot("#name", "brick8").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick8").tags.homeY - ball.tags.homeY) < .9) {
+            if(brick8Destroyed == true) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    if(Math.abs(getBot("#name", "brick9").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick9").tags.homeY - ball.tags.homeY) < .9) {
+            if(brick9Destroyed == true) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    if(Math.abs(getBot("#name", "brick10").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick10").tags.homeY - ball.tags.homeY) < .9) {
+            if(brick10Destroyed == true) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    if(Math.abs(getBot("#name", "brick11").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick11").tags.homeY - ball.tags.homeY) < .9) {
+            if(brick11Destroyed == true) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    if(Math.abs(getBot("#name", "brick12").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick12").tags.homeY - ball.tags.homeY) < .9) {
+            if(brick12Destroyed == true) { 
+                return true;
+            } else { 
+                return false;
+            }
+        }
+    if(Math.abs(getBot("#name", "brick13").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick13").tags.homeY - ball.tags.homeY) < .9) {
+            if(brick13Destroyed == true) { 
+                return true;
+            } else { 
+                return false;
+            }
+        }
+    if(Math.abs(getBot("#name", "brick14").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick14").tags.homeY - ball.tags.homeY) < .9) {
+            if(brick14Destroyed == true) { 
+                return true;
+            } else { 
+                return false;
+            }
+        }
+    if(Math.abs(getBot("#name", "brick15").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick15").tags.homeY - ball.tags.homeY) < .9) {
+            if(brick15Destroyed == true) { 
+                return true;
+            } else { 
+                return false;
+            }
+        }
+    if(Math.abs(getBot("#name", "brick16").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick16").tags.homeY - ball.tags.homeY) < .9) {
+            if(brick16Destroyed == true) { 
+                return true;
+            } else { 
+                return false;
+            }
+        }
+    if(Math.abs(getBot("#name", "brick17").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick17").tags.homeY - ball.tags.homeY) < .9) {
+            if(brick17Destroyed == true) { 
+                return true;
+            } else { 
+                return false;
+            }
+        }
+    if(Math.abs(getBot("#name", "brick18").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick18").tags.homeY - ball.tags.homeY) < .9) {
+            if(brick18Destroyed == true) { 
+                return true;
+            } else { 
+                return false;
+            }
+        }
+    if(Math.abs(getBot("#name", "brick19").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick19").tags.homeY - ball.tags.homeY) < .9) {
+            if(brick19Destroyed == true) { 
+                return true;
+            } else { 
+                return false;
+            }
+        }
+    if(Math.abs(getBot("#name", "brick20").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick20").tags.homeY - ball.tags.homeY) < .9) {
+            if(brick20Destroyed == true) { 
+                return true;
+            } else { 
+                return false;
+            }
+        }
+    if(Math.abs(getBot("#name", "brick21").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick21").tags.homeY - ball.tags.homeY) < .9) {
+            if(brick21Destroyed == true) { 
+                return true;
+            } else { 
+                return false;
+            }
+        }
+    if(Math.abs(getBot("#name", "brick22").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick22").tags.homeY - ball.tags.homeY) < .9) {
+            if(brick22Destroyed == true) { 
+                return true;
+            } else { 
+                return false;
+            }
+        }
+    if(Math.abs(getBot("#name", "brick23").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick23").tags.homeY - ball.tags.homeY) < .9) {
+            if(brick23Destroyed == true) { 
+                return true;
+            } else { 
+                return false;
+            }
+        }
+    if(Math.abs(getBot("#name", "brick24").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick24").tags.homeY - ball.tags.homeY) < .9) {
+            if(brick24Destroyed == true) { 
+                return true;
+            } else { 
+                return false;
+            }
+        }
+    if(Math.abs(getBot("#name", "brick25").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick25").tags.homeY - ball.tags.homeY) < .9) {
+            if(brick25Destroyed == true) { 
+                return true;
+            } else { 
+                return false;
+            }
+        }
+    if(Math.abs(getBot("#name", "brick26").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick26").tags.homeY - ball.tags.homeY) < .9) {
+            if(brick26Destroyed == true) { 
+                return true;
+            } else { 
+                return false;
+            }
+        }
+    if(Math.abs(getBot("#name", "brick27").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick27").tags.homeY - ball.tags.homeY) < .9) {
+            if(brick27Destroyed == true) { 
+                return true;
+            } else { 
+                return false;
+            }
+        }
+    if(Math.abs(getBot("#name", "brick28").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick28").tags.homeY - ball.tags.homeY) < .9) {
+            if(brick28Destroyed == true) { 
+                return true;
+            } else { 
+                return false;
+            }
+        }
+    if(Math.abs(getBot("#name", "brick29").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick29").tags.homeY - ball.tags.homeY) < .9) {
+            if(brick29Destroyed == true) { 
+                return true;
+            } else { 
+                return false;
+            }
+        }
+    if(Math.abs(getBot("#name", "brick30").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick30").tags.homeY - ball.tags.homeY) < .9) {
+            if(brick30Destroyed == true) { 
+                return true;
+            } else { 
+                return false;
+            }
+        }
+    if(Math.abs(getBot("#name", "brick31").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick31").tags.homeY - ball.tags.homeY) < .9) {
+            if(brick31Destroyed == true) { 
+                return true;
+            } else { 
+                return false;
+            }
+        }
+    if(Math.abs(getBot("#name", "brick32").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick32").tags.homeY - ball.tags.homeY) < .9) {
+            if(brick32Destroyed == true) { 
+                return true;
+            } else { 
+                return false;
+            }
+        }
+        return true; 
+}
+
+//Checks if any non-destroyed bricks are in contact with the ball and sets them to destroyed
+function findBrick() {
+    if(brick1Destroyed == false) {
+        if(Math.abs(getBot("#name", "brick1").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick1").tags.homeY - ball.tags.homeY) < .9) {
+        //thisBot.tags.label = getBot("#name", "brick1").tags.homeX.toString();
+        //destroy(getBot("#name", "brick1")); 
+            getBot(byTag("#name", "brick1")).tags.homeX = 100;
+            getBot(byTag("#name", "brick1")).tags.color = "black";
+            getBot(byTag("#name", "brick1")).tags.scaleX = .1;
+            getBot(byTag("#name", "brick1")).tags.scaleY = .1;
+            brick1Destroyed = true;
+            bricksDestroyed = bricksDestroyed + 1; 
+            if(getBot("#name", "brick1").tags.homeX < ball.tags.homeX && getBot("#name", "brick1").tags.homeY < ball.tags.homeY) {
+                return "right";
+            } else if(getBot("#name", "brick1").tags.homeX < ball.tags.homeX && getBot("#name", "brick1").tags.homeY > ball.tags.homeY) {
+                return "bottom";
+            } else if(getBot("#name", "brick1").tags.homeX > ball.tags.homeX && getBot("#name", "brick1").tags.homeY > ball.tags.homeY) {
+                return "left"; 
+            } else {
+                return "top"; 
+            }
+        }
+    } 
+    if(brick2Destroyed == false) {
+        if(Math.abs(getBot("#name", "brick2").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick2").tags.homeY - ball.tags.homeY) < .9) {
+        //thisBot.tags.label = getBot("#name", "brick2").tags.homeX.toString();
+        //destroy(getBot("#name", "brick2"));
+        getBot(byTag("#name", "brick2")).tags.homeX = 100;
+        getBot(byTag("#name", "brick2")).tags.color = "black";
+        getBot(byTag("#name", "brick2")).tags.scaleX = .1;
+        getBot(byTag("#name", "brick2")).tags.scaleY = .1;
+        brick2Destroyed = true;
+        bricksDestroyed = bricksDestroyed + 1;
+        if(getBot("#name", "brick2").tags.homeX < ball.tags.homeX && getBot("#name", "brick2").tags.homeY < ball.tags.homeY) {
+                return "right";
+            } else if(getBot("#name", "brick2").tags.homeX < ball.tags.homeX && getBot("#name", "brick2").tags.homeY > ball.tags.homeY) {
+                return "bottom";
+            } else if(getBot("#name", "brick2").tags.homeX > ball.tags.homeX && getBot("#name", "brick2").tags.homeY > ball.tags.homeY) {
+                return "left"; 
+            } else {
+                return "top"; 
+            }
+        }
+    }
+    if(brick3Destroyed == false) {
+        if(Math.abs(getBot("#name", "brick3").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick3").tags.homeY - ball.tags.homeY) < .9) {
+        //thisBot.tags.label = getBot("#name", "brick3").tags.homeX.toString();
+        //destroy(getBot("#name", "brick3")); 
+        getBot(byTag("#name", "brick3")).tags.homeX = 100;
+        getBot(byTag("#name", "brick3")).tags.color = "black";
+        getBot(byTag("#name", "brick3")).tags.scaleX = .1;
+        getBot(byTag("#name", "brick3")).tags.scaleY = .1;
+        brick3Destroyed = true;
+        bricksDestroyed = bricksDestroyed + 1;
+        if(getBot("#name", "brick3").tags.homeX < ball.tags.homeX && getBot("#name", "brick3").tags.homeY < ball.tags.homeY) {
+                return "right";
+            } else if(getBot("#name", "brick3").tags.homeX < ball.tags.homeX && getBot("#name", "brick3").tags.homeY > ball.tags.homeY) {
+                return "bottom";
+            } else if(getBot("#name", "brick3").tags.homeX > ball.tags.homeX && getBot("#name", "brick3").tags.homeY > ball.tags.homeY) {
+                return "left"; 
+            } else {
+                return "top"; 
+            }
+        }
+    } 
+    if(brick4Destroyed == false) {
+        if(Math.abs(getBot("#name", "brick4").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick4").tags.homeY - ball.tags.homeY) < .9) {
+        //thisBot.tags.label = getBot("#name", "brick4").tags.homeX.toString();
+        //destroy(getBot("#name", "brick4")); 
+        getBot(byTag("#name", "brick4")).tags.homeX = 100;
+        getBot(byTag("#name", "brick4")).tags.color = "black";
+        getBot(byTag("#name", "brick4")).tags.scaleX = .1;
+        getBot(byTag("#name", "brick4")).tags.scaleY = .1;
+        brick4Destroyed = true;
+        bricksDestroyed = bricksDestroyed + 1;
+        if(getBot("#name", "brick4").tags.homeX < ball.tags.homeX && getBot("#name", "brick4").tags.homeY < ball.tags.homeY) {
+                return "right";
+            } else if(getBot("#name", "brick4").tags.homeX < ball.tags.homeX && getBot("#name", "brick4").tags.homeY > ball.tags.homeY) {
+                return "bottom";
+            } else if(getBot("#name", "brick4").tags.homeX > ball.tags.homeX && getBot("#name", "brick4").tags.homeY > ball.tags.homeY) {
+                return "left"; 
+            } else {
+                return "top"; 
+            }
+        }
+    } 
+    if(brick5Destroyed == false) {
+        if(Math.abs(getBot("#name", "brick5").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick5").tags.homeY - ball.tags.homeY) < .9) {
+        //thisBot.tags.label = getBot("#name", "brick5").tags.homeX.toString();
+        //destroy(getBot("#name", "brick5")); 
+        getBot(byTag("#name", "brick5")).tags.homeX = 100;
+        getBot(byTag("#name", "brick5")).tags.color = "black";
+        getBot(byTag("#name", "brick5")).tags.scaleX = .1;
+        getBot(byTag("#name", "brick5")).tags.scaleY = .1;
+        brick5Destroyed = true;
+        bricksDestroyed = bricksDestroyed + 1;
+        if(getBot("#name", "brick5").tags.homeX < ball.tags.homeX && getBot("#name", "brick5").tags.homeY < ball.tags.homeY) {
+                return "right";
+            } else if(getBot("#name", "brick5").tags.homeX < ball.tags.homeX && getBot("#name", "brick5").tags.homeY > ball.tags.homeY) {
+                return "bottom";
+            } else if(getBot("#name", "brick5").tags.homeX > ball.tags.homeX && getBot("#name", "brick5").tags.homeY > ball.tags.homeY) {
+                return "left"; 
+            } else {
+                return "top"; 
+            }
+        }
+    } 
+    if(brick6Destroyed == false) {
+        if(Math.abs(getBot("#name", "brick6").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick6").tags.homeY - ball.tags.homeY) < .9) {
+        //thisBot.tags.label = getBot("#name", "brick6").tags.homeX.toString();
+        //destroy(getBot("#name", "brick6")); 
+        getBot(byTag("#name", "brick6")).tags.homeX = 100;
+        getBot(byTag("#name", "brick6")).tags.color = "black";
+        getBot(byTag("#name", "brick6")).tags.scaleX = .1;
+        getBot(byTag("#name", "brick6")).tags.scaleY = .1;
+        brick6Destroyed = true;
+        bricksDestroyed = bricksDestroyed + 1;
+        if(getBot("#name", "brick6").tags.homeX < ball.tags.homeX && getBot("#name", "brick6").tags.homeY < ball.tags.homeY) {
+                return "right";
+            } else if(getBot("#name", "brick6").tags.homeX < ball.tags.homeX && getBot("#name", "brick6").tags.homeY > ball.tags.homeY) {
+                return "bottom";
+            } else if(getBot("#name", "brick6").tags.homeX > ball.tags.homeX && getBot("#name", "brick6").tags.homeY > ball.tags.homeY) {
+                return "left"; 
+            } else {
+                return "top"; 
+            }
+        }
+    } 
+    if(brick7Destroyed == false) {
+        if(Math.abs(getBot("#name", "brick7").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick7").tags.homeY - ball.tags.homeY) < .9) {
+        //thisBot.tags.label = getBot("#name", "brick7").tags.homeX.toString();
+        //destroy(getBot("#name", "brick7")); 
+        getBot(byTag("#name", "brick7")).tags.homeX = 100;
+        getBot(byTag("#name", "brick7")).tags.color = "black";
+        getBot(byTag("#name", "brick7")).tags.scaleX = .1;
+        getBot(byTag("#name", "brick7")).tags.scaleY = .1;
+        brick7Destroyed = true;
+        bricksDestroyed = bricksDestroyed + 1;
+        if(getBot("#name", "brick7").tags.homeX < ball.tags.homeX && getBot("#name", "brick7").tags.homeY < ball.tags.homeY) {
+                return "right";
+            } else if(getBot("#name", "brick7").tags.homeX < ball.tags.homeX && getBot("#name", "brick7").tags.homeY > ball.tags.homeY) {
+                return "bottom";
+            } else if(getBot("#name", "brick7").tags.homeX > ball.tags.homeX && getBot("#name", "brick7").tags.homeY > ball.tags.homeY) {
+                return "left"; 
+            } else {
+                return "top"; 
+            }
+        }
+    } 
+    if(brick8Destroyed == false) {
+        if(Math.abs(getBot("#name", "brick8").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick8").tags.homeY - ball.tags.homeY) < .9) {
+        //thisBot.tags.label = getBot("#name", "brick8").tags.homeX.toString();
+        //destroy(getBot("#name", "brick8")); 
+        getBot(byTag("#name", "brick8")).tags.homeX = 100;
+        getBot(byTag("#name", "brick8")).tags.color = "black";
+        getBot(byTag("#name", "brick8")).tags.scaleX = .1;
+        getBot(byTag("#name", "brick8")).tags.scaleY = .1;
+        brick8Destroyed = true;
+        bricksDestroyed = bricksDestroyed + 1;
+        if(getBot("#name", "brick8").tags.homeX < ball.tags.homeX && getBot("#name", "brick8").tags.homeY < ball.tags.homeY) {
+                return "right";
+            } else if(getBot("#name", "brick8").tags.homeX < ball.tags.homeX && getBot("#name", "brick8").tags.homeY > ball.tags.homeY) {
+                return "bottom";
+            } else if(getBot("#name", "brick8").tags.homeX > ball.tags.homeX && getBot("#name", "brick8").tags.homeY > ball.tags.homeY) {
+                return "left"; 
+            } else {
+                return "top"; 
+            }
+        }
+    } 
+    if(brick9Destroyed == false) {
+        if(Math.abs(getBot("#name", "brick9").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick9").tags.homeY - ball.tags.homeY) < .9) {
+        //thisBot.tags.label = getBot("#name", "brick9").tags.homeX.toString();
+        //destroy(getBot("#name", "brick9")); 
+        getBot(byTag("#name", "brick9")).tags.homeX = 100;
+        getBot(byTag("#name", "brick9")).tags.color = "black";
+        getBot(byTag("#name", "brick9")).tags.scaleX = .1;
+        getBot(byTag("#name", "brick9")).tags.scaleY = .1;
+        brick9Destroyed = true;
+        bricksDestroyed = bricksDestroyed + 1;
+        if(getBot("#name", "brick9").tags.homeX < ball.tags.homeX && getBot("#name", "brick9").tags.homeY < ball.tags.homeY) {
+                return "right";
+            } else if(getBot("#name", "brick9").tags.homeX < ball.tags.homeX && getBot("#name", "brick9").tags.homeY > ball.tags.homeY) {
+                return "bottom";
+            } else if(getBot("#name", "brick9").tags.homeX > ball.tags.homeX && getBot("#name", "brick9").tags.homeY > ball.tags.homeY) {
+                return "left"; 
+            } else {
+                return "top"; 
+            }
+        }
+    } 
+    if(brick10Destroyed == false) {
+        if(Math.abs(getBot("#name", "brick10").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick10").tags.homeY - ball.tags.homeY) < .9) {
+        //thisBot.tags.label = getBot("#name", "brick10").tags.homeX.toString();
+        //destroy(getBot("#name", "brick10"));
+        getBot(byTag("#name", "brick10")).tags.homeX = 100;
+        getBot(byTag("#name", "brick10")).tags.color = "black";
+        getBot(byTag("#name", "brick10")).tags.scaleX = .1;
+        getBot(byTag("#name", "brick10")).tags.scaleY = .1;
+        brick10Destroyed = true;
+        bricksDestroyed = bricksDestroyed + 1;
+        if(getBot("#name", "brick10").tags.homeX < ball.tags.homeX && getBot("#name", "brick10").tags.homeY < ball.tags.homeY) {
+                return "right";
+            } else if(getBot("#name", "brick10").tags.homeX < ball.tags.homeX && getBot("#name", "brick10").tags.homeY > ball.tags.homeY) {
+                return "bottom";
+            } else if(getBot("#name", "brick10").tags.homeX > ball.tags.homeX && getBot("#name", "brick10").tags.homeY > ball.tags.homeY) {
+                return "left"; 
+            } else {
+                return "top"; 
+            }
+        }
+    } 
+    if(brick11Destroyed == false) {
+        if(Math.abs(getBot("#name", "brick11").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick11").tags.homeY - ball.tags.homeY) < .9) {
+        //thisBot.tags.label = getBot("#name", "brick11").tags.homeX.toString();
+        //destroy(getBot("#name", "brick11")); 
+        getBot(byTag("#name", "brick11")).tags.homeX = 100;
+        getBot(byTag("#name", "brick11")).tags.color = "black";
+        getBot(byTag("#name", "brick11")).tags.scaleX = .1;
+        getBot(byTag("#name", "brick11")).tags.scaleY = .1;
+        brick11Destroyed = true;
+        bricksDestroyed = bricksDestroyed + 1;
+        if(getBot("#name", "brick11").tags.homeX < ball.tags.homeX && getBot("#name", "brick11").tags.homeY < ball.tags.homeY) {
+                return "right";
+            } else if(getBot("#name", "brick11").tags.homeX < ball.tags.homeX && getBot("#name", "brick11").tags.homeY > ball.tags.homeY) {
+                return "bottom";
+            } else if(getBot("#name", "brick11").tags.homeX > ball.tags.homeX && getBot("#name", "brick11").tags.homeY > ball.tags.homeY) {
+                return "left"; 
+            } else {
+                return "top"; 
+            }
+        }
+    } 
+    if(brick12Destroyed == false) {
+        if(Math.abs(getBot("#name", "brick12").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick12").tags.homeY - ball.tags.homeY) < .9) {
+        //thisBot.tags.label = getBot("#name", "brick12").tags.homeX.toString();
+        //destroy(getBot("#name", "brick12")); 
+            getBot(byTag("#name", "brick12")).tags.homeX = 100;
+            getBot(byTag("#name", "brick12")).tags.color = "black";
+            getBot(byTag("#name", "brick12")).tags.scaleX = .1;
+            getBot(byTag("#name", "brick12")).tags.scaleY = .1;
+            brick12Destroyed = true;
+            bricksDestroyed = bricksDestroyed + 1;
+            if(getBot("#name", "brick12").tags.homeX < ball.tags.homeX && getBot("#name", "brick12").tags.homeY < ball.tags.homeY) {
+                return "right";
+            } else if(getBot("#name", "brick12").tags.homeX < ball.tags.homeX && getBot("#name", "brick12").tags.homeY > ball.tags.homeY) {
+                return "bottom";
+            } else if(getBot("#name", "brick12").tags.homeX > ball.tags.homeX && getBot("#name", "brick12").tags.homeY > ball.tags.homeY) {
+                return "left"; 
+            } else {
+                return "top"; 
+            } 
+        }
+    }
+    if(brick13Destroyed == false) {
+        if(Math.abs(getBot("#name", "brick13").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick13").tags.homeY - ball.tags.homeY) < .9) {
+        //thisBot.tags.label = getBot("#name", "brick12").tags.homeX.toString();
+        //destroy(getBot("#name", "brick12")); 
+            getBot(byTag("#name", "brick13")).tags.homeX = 100;
+            getBot(byTag("#name", "brick13")).tags.color = "black";
+            getBot(byTag("#name", "brick13")).tags.scaleX = .1;
+            getBot(byTag("#name", "brick13")).tags.scaleY = .1;
+            brick13Destroyed = true;
+            bricksDestroyed = bricksDestroyed + 1;
+            if(getBot("#name", "brick13").tags.homeX < ball.tags.homeX && getBot("#name", "brick13").tags.homeY < ball.tags.homeY) {
+                return "right";
+            } else if(getBot("#name", "brick13").tags.homeX < ball.tags.homeX && getBot("#name", "brick13").tags.homeY > ball.tags.homeY) {
+                return "bottom";
+            } else if(getBot("#name", "brick13").tags.homeX > ball.tags.homeX && getBot("#name", "brick13").tags.homeY > ball.tags.homeY) {
+                return "left"; 
+            } else {
+                return "top"; 
+            } 
+        }
+    }
+    if(brick14Destroyed == false) {
+        if(Math.abs(getBot("#name", "brick14").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick14").tags.homeY - ball.tags.homeY) < .9) {
+        //thisBot.tags.label = getBot("#name", "brick12").tags.homeX.toString();
+        //destroy(getBot("#name", "brick12")); 
+            getBot(byTag("#name", "brick14")).tags.homeX = 100;
+            getBot(byTag("#name", "brick14")).tags.color = "black";
+            getBot(byTag("#name", "brick14")).tags.scaleX = .1;
+            getBot(byTag("#name", "brick14")).tags.scaleY = .1;
+            brick14Destroyed = true;
+            bricksDestroyed = bricksDestroyed + 1;
+            if(getBot("#name", "brick14").tags.homeX < ball.tags.homeX && getBot("#name", "brick14").tags.homeY < ball.tags.homeY) {
+                return "right";
+            } else if(getBot("#name", "brick14").tags.homeX < ball.tags.homeX && getBot("#name", "brick14").tags.homeY > ball.tags.homeY) {
+                return "bottom";
+            } else if(getBot("#name", "brick14").tags.homeX > ball.tags.homeX && getBot("#name", "brick14").tags.homeY > ball.tags.homeY) {
+                return "left"; 
+            } else {
+                return "top"; 
+            } 
+        }
+    }
+    if(brick15Destroyed == false) {
+        if(Math.abs(getBot("#name", "brick15").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick15").tags.homeY - ball.tags.homeY) < .9) {
+        //thisBot.tags.label = getBot("#name", "brick12").tags.homeX.toString();
+        //destroy(getBot("#name", "brick12")); 
+            getBot(byTag("#name", "brick15")).tags.homeX = 100;
+            getBot(byTag("#name", "brick15")).tags.color = "black";
+            getBot(byTag("#name", "brick15")).tags.scaleX = .1;
+            getBot(byTag("#name", "brick15")).tags.scaleY = .1;
+            brick15Destroyed = true;
+            bricksDestroyed = bricksDestroyed + 1;
+            if(getBot("#name", "brick15").tags.homeX < ball.tags.homeX && getBot("#name", "brick15").tags.homeY < ball.tags.homeY) {
+                return "right";
+            } else if(getBot("#name", "brick15").tags.homeX < ball.tags.homeX && getBot("#name", "brick15").tags.homeY > ball.tags.homeY) {
+                return "bottom";
+            } else if(getBot("#name", "brick15").tags.homeX > ball.tags.homeX && getBot("#name", "brick15").tags.homeY > ball.tags.homeY) {
+                return "left"; 
+            } else {
+                return "top"; 
+            } 
+        }
+    }
+    if(brick16Destroyed == false) {
+        if(Math.abs(getBot("#name", "brick16").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick16").tags.homeY - ball.tags.homeY) < .9) {
+        //thisBot.tags.label = getBot("#name", "brick12").tags.homeX.toString();
+        //destroy(getBot("#name", "brick12")); 
+            getBot(byTag("#name", "brick16")).tags.homeX = 100;
+            getBot(byTag("#name", "brick16")).tags.color = "black";
+            getBot(byTag("#name", "brick16")).tags.scaleX = .1;
+            getBot(byTag("#name", "brick16")).tags.scaleY = .1;
+            brick16Destroyed = true;
+            bricksDestroyed = bricksDestroyed + 1;
+            if(getBot("#name", "brick16").tags.homeX < ball.tags.homeX && getBot("#name", "brick16").tags.homeY < ball.tags.homeY) {
+                return "right";
+            } else if(getBot("#name", "brick16").tags.homeX < ball.tags.homeX && getBot("#name", "brick16").tags.homeY > ball.tags.homeY) {
+                return "bottom";
+            } else if(getBot("#name", "brick16").tags.homeX > ball.tags.homeX && getBot("#name", "brick16").tags.homeY > ball.tags.homeY) {
+                return "left"; 
+            } else {
+                return "top"; 
+            } 
+        }
+    }
+    if(brick17Destroyed == false) {
+        if(Math.abs(getBot("#name", "brick17").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick17").tags.homeY - ball.tags.homeY) < .9) {
+        //thisBot.tags.label = getBot("#name", "brick12").tags.homeX.toString();
+        //destroy(getBot("#name", "brick12")); 
+            getBot(byTag("#name", "brick17")).tags.homeX = 100;
+            getBot(byTag("#name", "brick17")).tags.color = "black";
+            getBot(byTag("#name", "brick17")).tags.scaleX = .1;
+            getBot(byTag("#name", "brick17")).tags.scaleY = .1;
+            brick17Destroyed = true;
+            bricksDestroyed = bricksDestroyed + 1;
+            if(getBot("#name", "brick17").tags.homeX < ball.tags.homeX && getBot("#name", "brick17").tags.homeY < ball.tags.homeY) {
+                return "right";
+            } else if(getBot("#name", "brick17").tags.homeX < ball.tags.homeX && getBot("#name", "brick17").tags.homeY > ball.tags.homeY) {
+                return "bottom";
+            } else if(getBot("#name", "brick17").tags.homeX > ball.tags.homeX && getBot("#name", "brick17").tags.homeY > ball.tags.homeY) {
+                return "left"; 
+            } else {
+                return "top"; 
+            } 
+        }
+    }
+    if(brick18Destroyed == false) {
+        if(Math.abs(getBot("#name", "brick18").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick18").tags.homeY - ball.tags.homeY) < .9) {
+        //thisBot.tags.label = getBot("#name", "brick12").tags.homeX.toString();
+        //destroy(getBot("#name", "brick12")); 
+            getBot(byTag("#name", "brick18")).tags.homeX = 100;
+            getBot(byTag("#name", "brick18")).tags.color = "black";
+            getBot(byTag("#name", "brick18")).tags.scaleX = .1;
+            getBot(byTag("#name", "brick18")).tags.scaleY = .1;
+            brick18Destroyed = true;
+            bricksDestroyed = bricksDestroyed + 1;
+            if(getBot("#name", "brick18").tags.homeX < ball.tags.homeX && getBot("#name", "brick18").tags.homeY < ball.tags.homeY) {
+                return "right";
+            } else if(getBot("#name", "brick18").tags.homeX < ball.tags.homeX && getBot("#name", "brick18").tags.homeY > ball.tags.homeY) {
+                return "bottom";
+            } else if(getBot("#name", "brick18").tags.homeX > ball.tags.homeX && getBot("#name", "brick18").tags.homeY > ball.tags.homeY) {
+                return "left"; 
+            } else {
+                return "top"; 
+            } 
+        }
+    }
+    if(brick19Destroyed == false) {
+        if(Math.abs(getBot("#name", "brick19").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick19").tags.homeY - ball.tags.homeY) < .9) {
+        //thisBot.tags.label = getBot("#name", "brick12").tags.homeX.toString();
+        //destroy(getBot("#name", "brick12")); 
+            getBot(byTag("#name", "brick19")).tags.homeX = 100;
+            getBot(byTag("#name", "brick19")).tags.color = "black";
+            getBot(byTag("#name", "brick19")).tags.scaleX = .1;
+            getBot(byTag("#name", "brick19")).tags.scaleY = .1;
+            brick19Destroyed = true;
+            bricksDestroyed = bricksDestroyed + 1;
+            if(getBot("#name", "brick19").tags.homeX < ball.tags.homeX && getBot("#name", "brick19").tags.homeY < ball.tags.homeY) {
+                return "right";
+            } else if(getBot("#name", "brick19").tags.homeX < ball.tags.homeX && getBot("#name", "brick19").tags.homeY > ball.tags.homeY) {
+                return "bottom";
+            } else if(getBot("#name", "brick19").tags.homeX > ball.tags.homeX && getBot("#name", "brick19").tags.homeY > ball.tags.homeY) {
+                return "left"; 
+            } else {
+                return "top"; 
+            } 
+        }
+    }
+    if(brick20Destroyed == false) {
+        if(Math.abs(getBot("#name", "brick20").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick20").tags.homeY - ball.tags.homeY) < .9) {
+        //thisBot.tags.label = getBot("#name", "brick12").tags.homeX.toString();
+        //destroy(getBot("#name", "brick12")); 
+            getBot(byTag("#name", "brick20")).tags.homeX = 100;
+            getBot(byTag("#name", "brick20")).tags.color = "black";
+            getBot(byTag("#name", "brick20")).tags.scaleX = .1;
+            getBot(byTag("#name", "brick20")).tags.scaleY = .1;
+            brick20Destroyed = true;
+            bricksDestroyed = bricksDestroyed + 1;
+            if(getBot("#name", "brick20").tags.homeX < ball.tags.homeX && getBot("#name", "brick20").tags.homeY < ball.tags.homeY) {
+                return "right";
+            } else if(getBot("#name", "brick20").tags.homeX < ball.tags.homeX && getBot("#name", "brick20").tags.homeY > ball.tags.homeY) {
+                return "bottom";
+            } else if(getBot("#name", "brick20").tags.homeX > ball.tags.homeX && getBot("#name", "brick20").tags.homeY > ball.tags.homeY) {
+                return "left"; 
+            } else {
+                return "top"; 
+            } 
+        }
+    }
+    if(brick21Destroyed == false) {
+        if(Math.abs(getBot("#name", "brick21").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick21").tags.homeY - ball.tags.homeY) < .9) {
+        //thisBot.tags.label = getBot("#name", "brick12").tags.homeX.toString();
+        //destroy(getBot("#name", "brick12")); 
+            getBot(byTag("#name", "brick21")).tags.homeX = 100;
+            getBot(byTag("#name", "brick21")).tags.color = "black";
+            getBot(byTag("#name", "brick21")).tags.scaleX = .1;
+            getBot(byTag("#name", "brick21")).tags.scaleY = .1;
+            brick21Destroyed = true;
+            bricksDestroyed = bricksDestroyed + 1;
+            if(getBot("#name", "brick21").tags.homeX < ball.tags.homeX && getBot("#name", "brick21").tags.homeY < ball.tags.homeY) {
+                return "right";
+            } else if(getBot("#name", "brick21").tags.homeX < ball.tags.homeX && getBot("#name", "brick21").tags.homeY > ball.tags.homeY) {
+                return "bottom";
+            } else if(getBot("#name", "brick21").tags.homeX > ball.tags.homeX && getBot("#name", "brick21").tags.homeY > ball.tags.homeY) {
+                return "left"; 
+            } else {
+                return "top"; 
+            } 
+        }
+    }
+    if(brick22Destroyed == false) {
+        if(Math.abs(getBot("#name", "brick22").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick22").tags.homeY - ball.tags.homeY) < .9) {
+        //thisBot.tags.label = getBot("#name", "brick12").tags.homeX.toString();
+        //destroy(getBot("#name", "brick12")); 
+            getBot(byTag("#name", "brick22")).tags.homeX = 100;
+            getBot(byTag("#name", "brick22")).tags.color = "black";
+            getBot(byTag("#name", "brick22")).tags.scaleX = .1;
+            getBot(byTag("#name", "brick22")).tags.scaleY = .1;
+            brick22Destroyed = true;
+            bricksDestroyed = bricksDestroyed + 1;
+            if(getBot("#name", "brick22").tags.homeX < ball.tags.homeX && getBot("#name", "brick22").tags.homeY < ball.tags.homeY) {
+                return "right";
+            } else if(getBot("#name", "brick22").tags.homeX < ball.tags.homeX && getBot("#name", "brick22").tags.homeY > ball.tags.homeY) {
+                return "bottom";
+            } else if(getBot("#name", "brick22").tags.homeX > ball.tags.homeX && getBot("#name", "brick22").tags.homeY > ball.tags.homeY) {
+                return "left"; 
+            } else {
+                return "top"; 
+            } 
+        }
+    }
+    if(brick23Destroyed == false) {
+        if(Math.abs(getBot("#name", "brick23").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick23").tags.homeY - ball.tags.homeY) < .9) {
+        //thisBot.tags.label = getBot("#name", "brick12").tags.homeX.toString();
+        //destroy(getBot("#name", "brick12")); 
+            getBot(byTag("#name", "brick23")).tags.homeX = 100;
+            getBot(byTag("#name", "brick23")).tags.color = "black";
+            getBot(byTag("#name", "brick23")).tags.scaleX = .1;
+            getBot(byTag("#name", "brick23")).tags.scaleY = .1;
+            brick23Destroyed = true;
+            bricksDestroyed = bricksDestroyed + 1;
+            if(getBot("#name", "brick23").tags.homeX < ball.tags.homeX && getBot("#name", "brick23").tags.homeY < ball.tags.homeY) {
+                return "right";
+            } else if(getBot("#name", "brick23").tags.homeX < ball.tags.homeX && getBot("#name", "brick23").tags.homeY > ball.tags.homeY) {
+                return "bottom";
+            } else if(getBot("#name", "brick23").tags.homeX > ball.tags.homeX && getBot("#name", "brick23").tags.homeY > ball.tags.homeY) {
+                return "left"; 
+            } else {
+                return "top"; 
+            } 
+        }
+    }
+    if(brick24Destroyed == false) {
+        if(Math.abs(getBot("#name", "brick24").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick24").tags.homeY - ball.tags.homeY) < .9) {
+        //thisBot.tags.label = getBot("#name", "brick12").tags.homeX.toString();
+        //destroy(getBot("#name", "brick12")); 
+            getBot(byTag("#name", "brick24")).tags.homeX = 100;
+            getBot(byTag("#name", "brick24")).tags.color = "black";
+            getBot(byTag("#name", "brick24")).tags.scaleX = .1;
+            getBot(byTag("#name", "brick24")).tags.scaleY = .1;
+            brick24Destroyed = true;
+            bricksDestroyed = bricksDestroyed + 1;
+            if(getBot("#name", "brick24").tags.homeX < ball.tags.homeX && getBot("#name", "brick24").tags.homeY < ball.tags.homeY) {
+                return "right";
+            } else if(getBot("#name", "brick24").tags.homeX < ball.tags.homeX && getBot("#name", "brick24").tags.homeY > ball.tags.homeY) {
+                return "bottom";
+            } else if(getBot("#name", "brick24").tags.homeX > ball.tags.homeX && getBot("#name", "brick24").tags.homeY > ball.tags.homeY) {
+                return "left"; 
+            } else {
+                return "top"; 
+            } 
+        }
+    }
+    if(brick25Destroyed == false) {
+        if(Math.abs(getBot("#name", "brick25").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick25").tags.homeY - ball.tags.homeY) < .9) {
+        //thisBot.tags.label = getBot("#name", "brick12").tags.homeX.toString();
+        //destroy(getBot("#name", "brick12")); 
+            getBot(byTag("#name", "brick25")).tags.homeX = 100;
+            getBot(byTag("#name", "brick25")).tags.color = "black";
+            getBot(byTag("#name", "brick25")).tags.scaleX = .1;
+            getBot(byTag("#name", "brick25")).tags.scaleY = .1;
+            brick25Destroyed = true;
+            bricksDestroyed = bricksDestroyed + 1;
+            if(getBot("#name", "brick25").tags.homeX < ball.tags.homeX && getBot("#name", "brick25").tags.homeY < ball.tags.homeY) {
+                return "right";
+            } else if(getBot("#name", "brick25").tags.homeX < ball.tags.homeX && getBot("#name", "brick25").tags.homeY > ball.tags.homeY) {
+                return "bottom";
+            } else if(getBot("#name", "brick25").tags.homeX > ball.tags.homeX && getBot("#name", "brick25").tags.homeY > ball.tags.homeY) {
+                return "left"; 
+            } else {
+                return "top"; 
+            } 
+        }
+    }
+    if(brick26Destroyed == false) {
+        if(Math.abs(getBot("#name", "brick26").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick26").tags.homeY - ball.tags.homeY) < .9) {
+        //thisBot.tags.label = getBot("#name", "brick12").tags.homeX.toString();
+        //destroy(getBot("#name", "brick12")); 
+            getBot(byTag("#name", "brick26")).tags.homeX = 100;
+            getBot(byTag("#name", "brick26")).tags.color = "black";
+            getBot(byTag("#name", "brick26")).tags.scaleX = .1;
+            getBot(byTag("#name", "brick26")).tags.scaleY = .1;
+            brick26Destroyed = true;
+            bricksDestroyed = bricksDestroyed + 1;
+            if(getBot("#name", "brick26").tags.homeX < ball.tags.homeX && getBot("#name", "brick26").tags.homeY < ball.tags.homeY) {
+                return "right";
+            } else if(getBot("#name", "brick26").tags.homeX < ball.tags.homeX && getBot("#name", "brick26").tags.homeY > ball.tags.homeY) {
+                return "bottom";
+            } else if(getBot("#name", "brick26").tags.homeX > ball.tags.homeX && getBot("#name", "brick26").tags.homeY > ball.tags.homeY) {
+                return "left"; 
+            } else {
+                return "top"; 
+            } 
+        }
+    }
+    if(brick27Destroyed == false) {
+        if(Math.abs(getBot("#name", "brick27").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick27").tags.homeY - ball.tags.homeY) < .9) {
+        //thisBot.tags.label = getBot("#name", "brick12").tags.homeX.toString();
+        //destroy(getBot("#name", "brick12")); 
+            getBot(byTag("#name", "brick27")).tags.homeX = 100;
+            getBot(byTag("#name", "brick27")).tags.color = "black";
+            getBot(byTag("#name", "brick27")).tags.scaleX = .1;
+            getBot(byTag("#name", "brick27")).tags.scaleY = .1;
+            brick27Destroyed = true;
+            bricksDestroyed = bricksDestroyed + 1;
+            if(getBot("#name", "brick27").tags.homeX < ball.tags.homeX && getBot("#name", "brick27").tags.homeY < ball.tags.homeY) {
+                return "right";
+            } else if(getBot("#name", "brick27").tags.homeX < ball.tags.homeX && getBot("#name", "brick27").tags.homeY > ball.tags.homeY) {
+                return "bottom";
+            } else if(getBot("#name", "brick27").tags.homeX > ball.tags.homeX && getBot("#name", "brick27").tags.homeY > ball.tags.homeY) {
+                return "left"; 
+            } else {
+                return "top"; 
+            } 
+        }
+    }
+    if(brick28Destroyed == false) {
+        if(Math.abs(getBot("#name", "brick28").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick28").tags.homeY - ball.tags.homeY) < .9) {
+        //thisBot.tags.label = getBot("#name", "brick12").tags.homeX.toString();
+        //destroy(getBot("#name", "brick12")); 
+            getBot(byTag("#name", "brick28")).tags.homeX = 100;
+            getBot(byTag("#name", "brick28")).tags.color = "black";
+            getBot(byTag("#name", "brick28")).tags.scaleX = .1;
+            getBot(byTag("#name", "brick28")).tags.scaleY = .1;
+            brick28Destroyed = true;
+            bricksDestroyed = bricksDestroyed + 1;
+            if(getBot("#name", "brick28").tags.homeX < ball.tags.homeX && getBot("#name", "brick28").tags.homeY < ball.tags.homeY) {
+                return "right";
+            } else if(getBot("#name", "brick28").tags.homeX < ball.tags.homeX && getBot("#name", "brick28").tags.homeY > ball.tags.homeY) {
+                return "bottom";
+            } else if(getBot("#name", "brick28").tags.homeX > ball.tags.homeX && getBot("#name", "brick28").tags.homeY > ball.tags.homeY) {
+                return "left"; 
+            } else {
+                return "top"; 
+            } 
+        }
+    }
+    if(brick29Destroyed == false) {
+        if(Math.abs(getBot("#name", "brick29").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick29").tags.homeY - ball.tags.homeY) < .9) {
+        //thisBot.tags.label = getBot("#name", "brick12").tags.homeX.toString();
+        //destroy(getBot("#name", "brick12")); 
+            getBot(byTag("#name", "brick29")).tags.homeX = 100;
+            getBot(byTag("#name", "brick29")).tags.color = "black";
+            getBot(byTag("#name", "brick29")).tags.scaleX = .1;
+            getBot(byTag("#name", "brick29")).tags.scaleY = .1;
+            brick29Destroyed = true;
+            bricksDestroyed = bricksDestroyed + 1;
+            if(getBot("#name", "brick29").tags.homeX < ball.tags.homeX && getBot("#name", "brick29").tags.homeY < ball.tags.homeY) {
+                return "right";
+            } else if(getBot("#name", "brick29").tags.homeX < ball.tags.homeX && getBot("#name", "brick29").tags.homeY > ball.tags.homeY) {
+                return "bottom";
+            } else if(getBot("#name", "brick29").tags.homeX > ball.tags.homeX && getBot("#name", "brick29").tags.homeY > ball.tags.homeY) {
+                return "left"; 
+            } else {
+                return "top"; 
+            } 
+        }
+    }
+    if(brick30Destroyed == false) {
+        if(Math.abs(getBot("#name", "brick30").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick30").tags.homeY - ball.tags.homeY) < .9) {
+        //thisBot.tags.label = getBot("#name", "brick12").tags.homeX.toString();
+        //destroy(getBot("#name", "brick12")); 
+            getBot(byTag("#name", "brick30")).tags.homeX = 100;
+            getBot(byTag("#name", "brick30")).tags.color = "black";
+            getBot(byTag("#name", "brick30")).tags.scaleX = .1;
+            getBot(byTag("#name", "brick30")).tags.scaleY = .1;
+            brick30Destroyed = true;
+            bricksDestroyed = bricksDestroyed + 1;
+            if(getBot("#name", "brick30").tags.homeX < ball.tags.homeX && getBot("#name", "brick30").tags.homeY < ball.tags.homeY) {
+                return "right";
+            } else if(getBot("#name", "brick30").tags.homeX < ball.tags.homeX && getBot("#name", "brick30").tags.homeY > ball.tags.homeY) {
+                return "bottom";
+            } else if(getBot("#name", "brick30").tags.homeX > ball.tags.homeX && getBot("#name", "brick30").tags.homeY > ball.tags.homeY) {
+                return "left"; 
+            } else {
+                return "top"; 
+            } 
+        }
+    }
+    if(brick31Destroyed == false) {
+        if(Math.abs(getBot("#name", "brick31").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick31").tags.homeY - ball.tags.homeY) < .9) {
+        //thisBot.tags.label = getBot("#name", "brick12").tags.homeX.toString();
+        //destroy(getBot("#name", "brick12")); 
+            getBot(byTag("#name", "brick31")).tags.homeX = 100;
+            getBot(byTag("#name", "brick31")).tags.color = "black";
+            getBot(byTag("#name", "brick31")).tags.scaleX = .1;
+            getBot(byTag("#name", "brick31")).tags.scaleY = .1;
+            brick31Destroyed = true;
+            bricksDestroyed = bricksDestroyed + 1;
+            if(getBot("#name", "brick31").tags.homeX < ball.tags.homeX && getBot("#name", "brick31").tags.homeY < ball.tags.homeY) {
+                return "right";
+            } else if(getBot("#name", "brick31").tags.homeX < ball.tags.homeX && getBot("#name", "brick31").tags.homeY > ball.tags.homeY) {
+                return "bottom";
+            } else if(getBot("#name", "brick31").tags.homeX > ball.tags.homeX && getBot("#name", "brick31").tags.homeY > ball.tags.homeY) {
+                return "left"; 
+            } else {
+                return "top"; 
+            } 
+        }
+    }
+    if(brick32Destroyed == false) {
+        if(Math.abs(getBot("#name", "brick32").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick32").tags.homeY - ball.tags.homeY) < .9) {
+        //thisBot.tags.label = getBot("#name", "brick12").tags.homeX.toString();
+        //destroy(getBot("#name", "brick12")); 
+            getBot(byTag("#name", "brick32")).tags.homeX = 100;
+            getBot(byTag("#name", "brick32")).tags.color = "black";
+            getBot(byTag("#name", "brick32")).tags.scaleX = .1;
+            getBot(byTag("#name", "brick32")).tags.scaleY = .1;
+            brick32Destroyed = true;
+            bricksDestroyed = bricksDestroyed + 1;
+            if(getBot("#name", "brick32").tags.homeX < ball.tags.homeX && getBot("#name", "brick32").tags.homeY < ball.tags.homeY) {
+                return "right";
+            } else if(getBot("#name", "brick32").tags.homeX < ball.tags.homeX && getBot("#name", "brick32").tags.homeY > ball.tags.homeY) {
+                return "bottom";
+            } else if(getBot("#name", "brick32").tags.homeX > ball.tags.homeX && getBot("#name", "brick32").tags.homeY > ball.tags.homeY) {
+                return "left"; 
+            } else {
+                return "top"; 
+            } 
+        }
+    }
+}
+
+//Checks to see if any bricks are in contact with the ball
+function isTouchingBricks() {
+        if(Math.abs(getBot("#name", "brick1").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick1").tags.homeY - ball.tags.homeY) < .9 || Math.abs(getBot("#name", "brick2").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick2").tags.homeY - ball.tags.homeY) < .9 || Math.abs(getBot("#name", "brick3").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick3").tags.homeY - ball.tags.homeY) < .9 || Math.abs(getBot("#name", "brick4").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick4").tags.homeY - ball.tags.homeY) < .9 || Math.abs(getBot("#name", "brick5").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick5").tags.homeY - ball.tags.homeY) < .9 || Math.abs(getBot("#name", "brick6").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick6").tags.homeY - ball.tags.homeY) < .9 || Math.abs(getBot("#name", "brick7").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick7").tags.homeY - ball.tags.homeY) < .9 || Math.abs(getBot("#name", "brick8").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick8").tags.homeY - ball.tags.homeY) < .9 || Math.abs(getBot("#name", "brick9").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick9").tags.homeY - ball.tags.homeY) < .9 || Math.abs(getBot("#name", "brick10").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick10").tags.homeY - ball.tags.homeY) < .9 || Math.abs(getBot("#name", "brick11").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick11").tags.homeY - ball.tags.homeY) < .9 || Math.abs(getBot("#name", "brick12").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick12").tags.homeY - ball.tags.homeY) < .9 || Math.abs(getBot("#name", "brick13").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick13").tags.homeY - ball.tags.homeY) < .9 || Math.abs(getBot("#name", "brick14").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick14").tags.homeY - ball.tags.homeY) < .9 || Math.abs(getBot("#name", "brick15").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick15").tags.homeY - ball.tags.homeY) < .9 || Math.abs(getBot("#name", "brick16").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick16").tags.homeY - ball.tags.homeY) < .9 || Math.abs(getBot("#name", "brick17").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick17").tags.homeY - ball.tags.homeY) < .9 || Math.abs(getBot("#name", "brick18").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick18").tags.homeY - ball.tags.homeY) < .9 || Math.abs(getBot("#name", "brick19").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick19").tags.homeY - ball.tags.homeY) < .9 || Math.abs(getBot("#name", "brick20").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick20").tags.homeY - ball.tags.homeY) < .9 || Math.abs(getBot("#name", "brick21").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick21").tags.homeY - ball.tags.homeY) < .9 || Math.abs(getBot("#name", "brick22").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick22").tags.homeY - ball.tags.homeY) < .9 || Math.abs(getBot("#name", "brick23").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick23").tags.homeY - ball.tags.homeY) < .9 || Math.abs(getBot("#name", "brick24").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick24").tags.homeY - ball.tags.homeY) < .9 || Math.abs(getBot("#name", "brick25").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick25").tags.homeY - ball.tags.homeY) < .9 || Math.abs(getBot("#name", "brick26").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick26").tags.homeY - ball.tags.homeY) < .9 || Math.abs(getBot("#name", "brick27").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick27").tags.homeY - ball.tags.homeY) < .9 || Math.abs(getBot("#name", "brick28").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick28").tags.homeY - ball.tags.homeY) < .9 || Math.abs(getBot("#name", "brick29").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick29").tags.homeY - ball.tags.homeY) < .9 || Math.abs(getBot("#name", "brick30").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick30").tags.homeY - ball.tags.homeY) < .9 || Math.abs(getBot("#name", "brick31").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick31").tags.homeY - ball.tags.homeY) < .9 || Math.abs(getBot("#name", "brick32").tags.homeX - ball.tags.homeX) < .9 & Math.abs(getBot("#name", "brick32").tags.homeY - ball.tags.homeY) < .9) {
+            return true;
+        } else {
+            return false; 
+        }
+}
+//checks to see if the ball is touching the left boundary
+function isTouchingLeft() {
+    if(ball.tags.homeX * -1 - 12.4 > ball.tags.homeY) {
+        return true;
+    } else {
+        return false;
+    }
+}
+//checks to see if the ball is touching the top boundary
+function isTouchingTop() {
+    if(ball.tags.homeX + 27.7 < ball.tags.homeY) {
+        return true;
+    } else {
+        return false;
+    }
+}
+//checks to see if the ball is touching the right boundary
+function isTouchingRight() {
+    if(ball.tags.homeX * -1 + 12 < ball.tags.homeY) {
+        return true;
+    } else {
+        return false;
+    }
+}
+//checks to see if the ball is touching the bottom boundary
+function isTouchingBottom() {
+    if(ball.tags.homeX + .4 > ball.tags.homeY) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+let leftBoundary = false;
+let topBoundary = true;
+let rightBoundary = true;
+let bottomBoundary = true; 
+let pointer = "left"; 
+let recentLR = "left";
+let recentTB = "bottom"; 
+let brickSide = "left"; 
+let clockwise = true; 
+let secondToLast = "bottom"; 
+//Sets the time intervals for the game
+let interval1 = setInterval(function() {   
+    if(bricksDestroyed >= 4) {
+        clearInterval(interval1); 
+        let interval2 = setInterval(function() {   
+            if(bricksDestroyed > 7) {
+                clearInterval(interval2);
+                let interval3 = setInterval(function() {   
+    if(bricksDestroyed > 31) {
+        clearInterval(interval3); 
+        gameOver.tags.homeX = -4.8;
+        gameOver.tags.homeY = 4.5;
+        gameOver.tags.scaleX = 10;
+        gameOver.tags.scaleY = 2;
+        gameOver.tags.color = "white";
+        gameOver.tags.label = "Congratulations! You destroyed all of the bricks";
+        ball.tags.homeX = 100;
+        ball.tags.homeY = 100;
+        ball.tags.color = "black";
+        getBot(byTag("#name", "playAgain")).tags.scaleX = 10;
+        getBot(byTag("#name", "playAgain")).tags.scaleY = 2;
+        getBot(byTag("#name", "playAgain")).tags.homeX = -2.0284150293304037;
+        getBot(byTag("#name", "playAgain")).tags.homeY = 1.7109281484096428;
+        getBot(byTag("#name", "playAgain")).tags.color = "grey";
+    } 
+    if(getBot(byTag("#name", "playAgain")).tags.color == "grey") {
+        clearInterval(interval3);
+    }
+    gameState();
+}, 10)
+            }
+    if(getBot(byTag("#name", "playAgain")).tags.color == "grey") {
+        clearInterval(interval3);
+    }
+    gameState(); 
+}, 15)
+    }
+    if(getBot(byTag("#name", "playAgain")).tags.color == "grey") {
+        clearInterval(interval3);
+    }
+    gameState(); 
+}, 20)
+
+//Runs through operations to track the gamestate
+function gameState() {
+    thisBot.tags.label = " "; 
+    if(!isTouchingLeft() && isTouchingTop() && leftBoundary == false && (!isTouchingBricks() || isDestroyed())) {
+            ball.tags.homeY = ball.tags.homeY - .1;
+            clockwise = false; 
+    } else if(!isTouchingLeft() && isTouchingBottom() && leftBoundary == false && (!isTouchingBricks() || isDestroyed())) {
+        if(Math.abs(getBot("#color", "green").tags.homeX - ball.tags.homeX) < .9 && Math.abs(getBot("#color", "green").tags.homeY  - ball.tags.homeY) < .9) {
+            ball.tags.homeX = ball.tags.homeX - .1;
+            clockwise = true;
+        } else {
+            gameOver.tags.homeX = -4.8;
+            gameOver.tags.homeY = 4.5;
+            gameOver.tags.scaleX = 10;
+            gameOver.tags.scaleY = 2;
+            gameOver.tags.color = "white";
+            gameOver.tags.label = "Game over. You destroyed " + bricksDestroyed.toString() + " bricks";
+            ball.tags.homeX = 100;
+            ball.tags.homeY = 100;
+            ball.tags.color = "black"; 
+            pointer = "done"; 
+            getBot(byTag("#name", "playAgain")).tags.scaleX = 10;
+            getBot(byTag("#name", "playAgain")).tags.scaleY = 2;
+            getBot(byTag("#name", "playAgain")).tags.homeX = -2.0284150293304037;
+            getBot(byTag("#name", "playAgain")).tags.homeY = 1.7109281484096428;
+            getBot(byTag("#name", "playAgain")).tags.color = "grey" 
+        }
+    } else if (!isTouchingLeft() && leftBoundary == false && (!isTouchingBricks() || isDestroyed())) {
+        if(clockwise == true) {
+            ball.tags.homeX = ball.tags.homeX - .1;
+        } else {
+            ball.tags.homeY = ball.tags.homeY - .1;
+        }
+    } else if(isTouchingBricks() && !isDestroyed() && pointer == "left") { 
+        brickSide = findBrick(); 
+        leftBoundary = true;
+        if(brickSide == "right" && recentTB == "bottom") {
+            topBoundary = false;
+            pointer = "top"; 
+            clockwise = true; 
+        } else if(brickSide == "right" && recentTB == "top") {
+            bottomBoundary = false;
+            pointer = "bottom"; 
+            clockwise = false;
+        } else if(brickSide == "top") {
+            topBoundary = false;
+            pointer = "top"; 
+            clockwise = false;
+        } else if(brickSide == "bottom") { 
+            bottomBoundary = false;
+            pointer = "bottom"; 
+            clockwise = true;
+        }
+    } else if(pointer == "left"){
+        if(clockwise == true) {
+            topBoundary = false;
+            pointer = "top"; 
+        } else {
+            bottomBoundary = false;
+            pointer = "bottom"; 
+        }
+        leftBoundary = true;
+        recentLR = "left";
+    }
+
+
+    if(!isTouchingTop() && isTouchingLeft() && topBoundary == false && (!isTouchingBricks() || isDestroyed())) {
+        ball.tags.homeY = ball.tags.homeY + .1;
+        clockwise = true;
+    } else if(!isTouchingTop() && isTouchingRight() && topBoundary == false && (!isTouchingBricks() || isDestroyed())) {
+        ball.tags.homeX = ball.tags.homeX - .1;
+        clockwise = false;
+    } else if(!isTouchingTop() && topBoundary == false && (!isTouchingBricks() || isDestroyed())) {
+        if(clockwise == true) {
+            ball.tags.homeY = ball.tags.homeY + .1;
+        } else {
+            ball.tags.homeX = ball.tags.homeX - .1;
+        }
+    } else if(isTouchingBricks() && !isDestroyed() && pointer == "top") {
+        brickSide = findBrick();
+        topBoundary = true;
+        if(brickSide == "bottom" && recentLR == "left") {
+            rightBoundary = false;
+            pointer = "right"; 
+            clockwise = true;
+        } else if(brickSide == "bottom" && recentLR == "right") {
+            leftBoundary = false;
+            pointer = "left"; 
+            clockwise = false;
+        } else if(brickSide == "right") {
+            rightBoundary = false;
+            pointer = "right"; 
+            clockwise = false;
+        } else if(brickSide == "left") {
+            leftBoundary = false;
+            pointer = "left"; 
+            clockwise = true;
+        }
+    } else if(pointer == "top") { 
+        if(clockwise) {
+            rightBoundary = false;
+            pointer = "right";
+        } else {
+            leftBoundary = false;
+            pointer = "left";
+        }
+        topBoundary = true;
+        recentTB = "top"; 
+    }
+
+
+    if(!isTouchingRight() && isTouchingTop() && rightBoundary == false && (!isTouchingBricks() || isDestroyed())) {
+        ball.tags.homeX = ball.tags.homeX + .1;
+        clockwise = true;
+    } else if(!isTouchingRight() && isTouchingBottom() && rightBoundary == false && (!isTouchingBricks() || isDestroyed())) {
+        ball.tags.homeY = ball.tags.homeY + .1;
+        clockwise = false;
+    } else if(!isTouchingRight() && rightBoundary == false && (!isTouchingBricks() || isDestroyed())) {
+        if(clockwise) {
+            ball.tags.homeX = ball.tags.homeX + .1;
+        } else {
+            ball.tags.homeY = ball.tags.homeY + .1;
+        }
+    } else if(isTouchingBricks() && !isDestroyed() && pointer == "right") { 
+        brickSide = findBrick();
+        rightBoundary = true;
+        if(brickSide == "left" && recentTB == "top") {
+            topBoundary = false;
+            pointer = "top"; 
+            clockwise = false;
+        } else if(brickSide == "left" && recentTB == "bottom") {
+            bottomBoundary = false;
+            pointer = "bottom"; 
+            clockwise = true;
+        } else if(brickSide == "top") {
+            topBoundary = false;
+            pointer = "top"; 
+            clockwise = true;
+        } else if(brickSide == "bottom") {
+            bottomBoundary = false;
+            pointer = "bottom"; 
+            clockwise = false;
+        }
+    } else if(pointer == "right") {
+        if(clockwise) {
+            bottomBoundary = false;
+            pointer = "bottom"; 
+        } else {
+            topBoundary = false;
+            pointer = "top"; 
+        }
+        rightBoundary = true;
+        recentLR = "right";
+    }
+
+
+    
+    if(!isTouchingBottom() && isTouchingLeft() && bottomBoundary == false && (!isTouchingBricks() || isDestroyed())) {
+        ball.tags.homeX = ball.tags.homeX + .1;
+        clockwise = false;
+    } else if(!isTouchingBottom() && isTouchingRight() && bottomBoundary == false && (!isTouchingBricks() || isDestroyed())) {
+        ball.tags.homeY = ball.tags.homeY - .1;
+        clockwise = true;
+    } else if(!isTouchingBottom() && bottomBoundary == false && (!isTouchingBricks() || isDestroyed())) {
+        if(clockwise) {
+            ball.tags.homeY = ball.tags.homeY - .1; 
+        } else { 
+            ball.tags.homeX = ball.tags.homeX + .1;
+        }
+    } else if(isTouchingBricks() && !isDestroyed() && pointer == "bottom") {
+        brickSide = findBrick();
+        bottomBoundary = true;
+        if(brickSide == "top" && recentLR == "right") {
+            rightBoundary = false;
+            pointer = "right"; 
+            clockwise = false;
+        } else if(brickSide == "top" && recentLR == "left") {
+            leftBoundary = false;
+            pointer = "left"; 
+            clockwise = true;
+        } else if(brickSide == "right") {
+            rightBoundary = false;
+            pointer = "right"; 
+            clockwise = true;
+        } else if(brickSide == "left") {
+            leftBoundary = false;
+            pointer = "left"; 
+            clockwise = false;
+        }
+    } else if(pointer == "bottom" && Math.abs(getBot("#color", "green").tags.homeX - ball.tags.homeX) < .9 && Math.abs(getBot("#color", "green").tags.homeY  - ball.tags.homeY) < .9) {
+        if(getBot("#color", "green").tags.homeX > ball.tags.homeX || getBot("#color", "green").tags.homeY > ball.tags.homeY) {
+            leftBoundary = false;
+            pointer = "left"; 
+            if(!clockwise) {
+                clockwise = true; 
+            }
+        } else {
+            rightBoundary = false;
+            pointer = "right"; 
+            if(clockwise) {
+                clockwise = false;
+            } 
+        }
+        bottomBoundary = true;
+        recentTB = "bottom";
+    } else if(pointer == "bottom") { 
+        gameOver.tags.homeX = -4.8;
+        gameOver.tags.homeY = 4.5;
+        gameOver.tags.scaleX = 10;
+        gameOver.tags.scaleY = 2;
+        gameOver.tags.color = "white";
+        gameOver.tags.label = "Game over. You destroyed " + bricksDestroyed.toString() + " bricks";
+        ball.tags.homeX = 100;
+        ball.tags.homeY = 100;
+        ball.tags.color = "black"; 
+        pointer = "done"; 
+        getBot(byTag("#name", "playAgain")).tags.scaleX = 10;
+        getBot(byTag("#name", "playAgain")).tags.scaleY = 2;
+        getBot(byTag("#name", "playAgain")).tags.homeX = -2.0284150293304037;
+        getBot(byTag("#name", "playAgain")).tags.homeY = 1.7109281484096428;
+        getBot(byTag("#name", "playAgain")).tags.color = "grey";
+    }
+}
